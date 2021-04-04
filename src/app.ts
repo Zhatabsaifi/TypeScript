@@ -1,0 +1,13 @@
+const type = document.querySelector('#type') as HTMLSelectElement;
+const tofrom = document.querySelector('#tofrom') as HTMLInputElement;
+const details = document.querySelector('#details') as HTMLInputElement;
+const amount = document.querySelector('#amount') as HTMLInputElement;
+
+const form = document.querySelector('.new-item-form') as HTMLFormElement;
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log(event);
+    console.log(type.value + " " + tofrom.value + " " + details.value + " " + amount.valueAsNumber);
+})
+
