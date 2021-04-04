@@ -2,7 +2,6 @@ var ListTemplate = /** @class */ (function () {
     function ListTemplate(container) {
         this.container = container;
     }
-    ;
     ListTemplate.prototype.render = function (item, heading, pos) {
         var li = document.createElement('li');
         var h4 = document.createElement('h4');

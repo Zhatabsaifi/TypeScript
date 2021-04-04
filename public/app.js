@@ -12,7 +12,7 @@ var amount = document.querySelector('#amount');
 var ul = document.querySelector('ul');
 var list = new ListTemplate(ul);
 form.addEventListener('submit', function (e) {
-    // e.preventDefault();
+    e.preventDefault();
     var doc;
     if (type.value === 'invoice') {
         doc = new InVoice(tofrom.value, details.value, amount.valueAsNumber);
